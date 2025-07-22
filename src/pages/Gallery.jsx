@@ -9,7 +9,7 @@ function Profile() {
   alt="Foto de perfil"
   className="profile-img"
 />
-      <h1 className="profile-name">Phyona Schrader</h1>
+      <h1 className="profile-name">Gallery</h1>
       <p className="profile-role">Ingeniera en Computación | Mentora | Atleta</p>
       <p className="profile-description">
         Apasionada por la tecnología, los sistemas distribuidos, y el desarrollo personal.

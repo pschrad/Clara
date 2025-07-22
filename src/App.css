@@ -40,3 +40,32 @@
 .read-the-docs {
   color: #888;
 }
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #a8a0a0; /* match your site background or set a color */
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+nav a {
+  padding: 0.5em 1.2em;
+  background: #646cff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: #535bf2;
+}
