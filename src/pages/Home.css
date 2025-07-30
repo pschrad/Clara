@@ -1,0 +1,79 @@
+.profile-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.profile-image-container {
+  flex: 0 0 300px;
+  margin-top: 20rem;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-name {
+  margin-top: -35rem; /* Moves the text up slightly */
+  margin-left: -65rem; /* Moves the text to the left slightly */
+}
+
+.profile-role {
+  margin-top: 5rem; /* Moves the text up slightly */
+  margin-left: -75rem; /* Moves the text to the left slightly */
+}
+
+.profile-description {
+  margin-top: 5rem; /* Moves the text up slightly */
+  margin-left: -75rem; /* Moves the text to the left slightly */
+}
+
+.main-content {
+  flex: 1;
+  margin-top: -2rem;
+  margin-left: -1rem;
+}
+
+.quote-card {
+  background: #555;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  padding: 1.5rem;
+  margin-left: 60rem;
+  max-width: 400px;
+  text-align: center;
+  /*margin-top: -2rem;*/
+}
+
+.bottom-cards {
+  width: 200vw; /* Double the width for two sets */
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+  z-index: 100;
+  animation: scroll-left 20s linear infinite;
+  margin-bottom: -20rem;
+}
+.home-card {
+  background: #f5f5f5; /* Light background for cards */
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: 100px; /* Ensure cards have consistent height */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50vw); /* Move by half the container width */
+  }
+}
+

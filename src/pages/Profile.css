@@ -37,31 +37,3 @@
 }
 
 
-.home-card {
-  background: #555;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-  padding: 1.5rem;
-  margin: 2rem auto;
-  max-width: 400px;
-  text-align: center;
-}
-
-.bottom-cards-container {
-  width: 200vw; /* Double the width for two sets */
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  overflow: hidden;
-  z-index: 100;
-  animation: scroll-left 20s linear infinite;
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50vw); /* Move by half the container width */
-  }
-}

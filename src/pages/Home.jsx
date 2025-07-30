@@ -1,43 +1,46 @@
 // src/Profile.jsx
-import './Profile.css'; // Puedes usar módulos o Tailwind si prefieres
-import ProfilePic from './IGFZ8341.JPG';
-function Profile() {
+import './Home.css'; // Still using your own CSS or modules
+import ProfilePic from './CaraProfile.png';
+import Logo from './logo.png';
+
+function Home() {
   return (
     <div className="profile-container">
-      <img
-        src={ProfilePic}
-        alt="Foto de perfil"
-        className="profile-img"
-    />
-      <h1 className="profile-name">Home</h1>
-      <p className="profile-role">Ingeniera en Computación | Mentora | Atleta</p>
-      <p className="profile-description">
-        Apasionada por la tecnología, los sistemas distribuidos, y el desarrollo personal.
-        Actualmente trabajando en proyectos de radar y explorando el mundo de la ingeniería militar.
-      </p>
-      {/* Cards */}
-      <div className="home-card">
-        <h2>Bienvenida</h2>
-        <p>¡Gracias por visitar mi sitio web!</p>
+      {/* Left Side: Large Profile Image */}
+      <div className="profile-image-container">
+        <img
+          src={ProfilePic}
+          alt="Foto de perfil"
+          className="profile-image"
+          
+        />
       </div>
-      {/* Comments Section */}
-      <div className="comments-section">
-        <p>¡Gracias por visitar mi sitio web!</p>
-        {/* Comments will go here */}
+
+      {/* Right Side: Main Content */}
+      <div className="main-content">
+        <h1 className="profile-name">Home</h1>
+        <p className="profile-role">This is a little bit about me... I play very pretty and and very pretty and dab. <br/>................................................................................................................</p>
+        <p className="profile-description">
+          This is just a different paragraph.. We can make as many of these as you want</p>
+
+        <div className="quote-card">
+          <h2>Get a quote</h2>
+          
+        </div>
+
+       
+
+        <div className="bottom-cards">
+          <div className="home-card">Card 1</div>
+          <div className="home-card">Card 2</div>
+          <div className="home-card">Card 3</div>
+          <div className="home-card">Card 1</div>
+          <div className="home-card">Card 2</div>
+          <div className="home-card">Card 3</div>
+        </div>
       </div>
-    <div className="bottom-cards-container">
-    <div className="home-card">Card 1</div>
-    <div className="home-card">Card 2</div>
-    <div className="home-card">Card 3</div>
-    {/* Add more cards as needed */}
-    {/* Repeat the cards for seamless effect */}
-  <div className="home-card">Card 1</div>
-  <div className="home-card">Card 2</div>
-  <div className="home-card">Card 3</div>
-</div>
-      
     </div>
   );
 }
 
-export default Profile;
+export default Home;
