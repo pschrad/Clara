@@ -42,30 +42,35 @@
 }
 
 
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
+
+.top-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #a8a0a0; /* match your site background or set a color */
+  background: #a8a0a0;
   z-index: 1000;
-  padding: 1rem 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
 }
 
-nav a {
-  padding: 0.5em 1.2em;
-  background: #646cff;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.2s;
+.nav-left {
+  margin-right: auto;
 }
 
-nav a:hover {
-  background: #535bf2;
+.nav-logo {
+  height: auto;
+  width: 220px;
+  display: block;
+}
+
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
 }

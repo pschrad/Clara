@@ -8,18 +8,24 @@ import Home from './pages/Home.jsx';
 import Gallery from './pages/Gallery.jsx';
 import Videos from './pages/Videos.jsx';
 import Contacts from './pages/Contacts.jsx';
+import Logo from './logo.png';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <Router>
-      <nav>
+      <nav className="top-nav">
+      <div className="nav-left">
+      <img src={Logo} alt="Logo" className="nav-logo" />
+      </div>
+      <div className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/gallery">Gallery</Link>
         <Link to="/videos">Videos</Link>
         <Link to="/contacts">Contacts</Link>
-      </nav>
+      </div>
+</nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />
