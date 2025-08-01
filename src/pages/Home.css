@@ -1,12 +1,14 @@
 .profile-container {
   display: flex;
+  flex-direction: row;
   gap: 2rem;
   align-items: flex-start;
+  padding: 2rem;
+  margin-top: 1rem;
 }
 
 .profile-image-container {
-  flex: 0 0 300px;
-  margin-top: 20rem;
+  flex: 0 0 400px;
 }
 
 .profile-image {
@@ -14,58 +16,73 @@
   height: auto;
   border-radius: 1rem;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+  flex: 1;
+  margin-top: 4rem;
+  margin-left: 5rem;
 }
 
 .profile-name {
-  margin-top: -35rem; /* Moves the text up slightly */
-  margin-left: -65rem; /* Moves the text to the left slightly */
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
 }
 
 .profile-role {
-  margin-top: 5rem; /* Moves the text up slightly */
-  margin-left: -75rem; /* Moves the text to the left slightly */
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  color: #555;
 }
 
 .profile-description {
-  margin-top: 5rem; /* Moves the text up slightly */
-  margin-left: -75rem; /* Moves the text to the left slightly */
-}
-
-.main-content {
-  flex: 1;
-  margin-top: -2rem;
-  margin-left: -1rem;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  color: #777;
 }
 
 .quote-card {
   background: #555;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   padding: 1.5rem;
-  margin-left: 60rem;
   max-width: 400px;
   text-align: center;
-  /*margin-top: -2rem;*/
+  margin-top: 20rem;
+  margin-left: -20rem;
 }
 
 .bottom-cards {
-  width: 200vw; /* Double the width for two sets */
   display: flex;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 10rem; /* Space between cards */
+  padding: 1rem 0;
   overflow: hidden;
-  z-index: 100;
-  animation: scroll-left 20s linear infinite;
-  margin-bottom: -20rem;
+  width: 150vw; /* Full width of container */
+  position: relative; /* For animation context */
+  margin-top: 35rem; /* Space from the top content */
+  margin-left: -75rem; /* Adjusted for better alignment */
 }
+
 .home-card {
-  background: #f5f5f5; /* Light background for cards */
+  background: #555; /* Changed for visibility */
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  min-height: 100px; /* Ensure cards have consistent height */
+  min-height: 100px;
+  flex: 0 0 150px; /* Fixed width for each card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Changed for visibility */
+}
+
+.bottom-cards-inner {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+  width: 300%; /* Adjust to content width */
+  gap: 10rem; /* Space between cards */
 }
 
 @keyframes scroll-left {
@@ -73,7 +90,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50vw); /* Move by half the container width */
+    transform: translateX(-33.33%); /* Move half the width for seamless loop with duplicates */
   }
 }
-
